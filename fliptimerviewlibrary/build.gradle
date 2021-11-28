@@ -34,3 +34,17 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.jitpack'
+                artifactId = 'FlipTimerView'
+                version = '1.0.4'
+            }
+        }
+    }
+}
