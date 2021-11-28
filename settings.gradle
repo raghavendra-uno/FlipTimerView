@@ -1,1 +1,1 @@
-include ':fliptimerviewlibrary'
+include ':app', ':fliptimerviewlibrary'
